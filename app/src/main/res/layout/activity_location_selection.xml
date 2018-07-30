@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.makvenis.hotel.listhotol.LocationSelectionActivity">
+
+    <include layout="@layout/public_layout_bank_name"></include>
+
+    <!-- 指定颜色机构 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 空闲 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:background="#5274d1"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="空闲"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- 就餐中 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:background="#9b58b5"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="就餐中"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- 等待清理 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:background="#f37835"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="等待清理"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- 已预约 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:background="#4ecdc4"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="已预约"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/mSelectionPathSwipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mSelectionPathRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+</LinearLayout>

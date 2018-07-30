@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.makvenis.hotel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".activity.SimpleDataBaseAplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:icon="@drawable/icon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AdvActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".registe.LoginActivity" />
+        <activity android:name=".registe.ClientRegisteActivity" />
+        <activity android:name=".registe.ValidationCelintActivity" />
+        <activity android:name=".registe.ClientInputRegisteActivity" />
+        <activity android:name=".activity.BaseActivity" />
+        <activity android:name=".listhotol.ListCofferActivity" />
+        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".listhotol.ShowMenuActivity" />
+        <activity android:name=".listhotol.LocationSelectionActivity" />
+        <activity android:name=".personalCentre.PersonalActivity" />
+        <activity android:name=".personalCentre.SettleAccountsActivity" />
+        <activity android:name=".listhotol.InformationActivity"></activity>
+    </application>
+
+</manifest>

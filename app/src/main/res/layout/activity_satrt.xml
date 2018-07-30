@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hotel.makvenis.com.hotel.StartActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/ixon_start_error_01"
+        android:id="@+id/mStartImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

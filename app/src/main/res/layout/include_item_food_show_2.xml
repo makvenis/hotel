@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 备注 -->
+        <TextView
+            android:gravity="start|center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="备注"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/mNoteRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end|center"
+            android:background="@null"
+            android:hint="最多输入10个字"
+            android:textColorHint="#d4d4d4"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:background="#d4d4d4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <!-- 备注 -->
+    <TextView
+        android:gravity="start|center"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="就餐人数"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"/>
+
+    <EditText
+        android:id="@+id/mNotePeopleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="end|center"
+        android:background="@null"
+        android:hint="填写人数"
+        android:inputType="number"
+        android:textColorHint="#d4d4d4"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:background="#d4d4d4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 备注 -->
+        <TextView
+            android:gravity="start|center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="发票抬头"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/mNoteTax"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end|center"
+            android:background="@null"
+            android:hint="填写单位名称，获取发票"
+            android:inputType="number"
+            android:textColorHint="#d4d4d4"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:background="#d4d4d4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/icon_home"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <!-- 头部分 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/mMainActivity_head"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/mHead_logo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_dit_32" />
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:textColor="#c30000"
+            android:textSize="20sp"
+            android:text="广元"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/icon_ewm"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <!-- body_1 -->
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- 幻灯片 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#e6af8f">
+
+                <json.makvenis.com.mylibrary.json.view.SimpleViewPage
+                    android:id="@+id/mSimpleViewPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </json.makvenis.com.mylibrary.json.view.SimpleViewPage>
+
+            </LinearLayout>
+
+            <!-- 消息和口袋 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#bae27f"
+                android:orientation="horizontal">
+
+                <!-- 消息 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/mMainActivity_message"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_weight="1"
+                    android:background="#d6a0d9">
+
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_main_msg_120"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="消息"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <!-- 口袋 -->
+                <LinearLayout
+                    android:id="@+id/mMainActivity_waimai"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="#5f5f5f">
+
+
+                    <ImageView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_main_waimai_120"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="外卖"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- 底部幻灯片 -->
+            <LinearLayout
+                android:background="#4da0ca"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="底部幻灯片"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- body_1 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <!-- 点餐 -->
+            <LinearLayout
+                android:id="@+id/mMainActivity_caidan"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="#9f4038"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_main_canpan_120"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="菜单"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- 预定 -->
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/mMainActivity_yd"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginTop="5dp"
+                android:background="#b7af60">
+
+                <ImageView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_main_yudingzhong_120"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="预定"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <!-- 喜欢 -->
+            <LinearLayout
+                android:id="@+id/mMainActivity_like"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginTop="5dp"
+                android:background="#30c355"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/mMainActivityLikeNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/background_round_color_ffffff"
+                    android:gravity="center"
+                    android:text="997"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_like_01_120"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="喜欢"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/mMainActivity_gengduo"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="#896ff2"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_main_gengduo_120"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="更多"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

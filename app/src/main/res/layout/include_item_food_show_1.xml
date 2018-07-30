@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 名称 -->
+        <TextView
+            android:id="@+id/mShowClassName"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="香辣鸡翅（微辣）"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"/>
+
+        <!-- 价格以及图标 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="￥"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/mShowSingleSale"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="199.88"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!-- 数量以及图标 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="X"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/mShowAllNum"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="199"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!-- 数量以及图标 -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/colorGr"
+                android:id="@+id/mShowType"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="max"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!-- 操作 -->
+        <Button
+            android:id="@+id/mShowOperation"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center|end"
+            android:textSize="16sp"
+            android:background="@drawable/background_round_color_4475de"
+            android:textColor="#FFFFFF"
+            android:text="删除"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <ImageView
+        android:background="#d4d4d4"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#e2a325"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 微信 -->
+        <LinearLayout
+            android:id="@+id/mCrop_local_wx"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="微信"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <!-- zhb -->
+        <LinearLayout
+            android:id="@+id/mCrop_local_zhb"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="支付宝"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <!-- 现金 -->
+        <LinearLayout
+            android:id="@+id/mCrop_local_cash"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="现金结算"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <!-- 取消退出 -->
+        <LinearLayout
+            android:id="@+id/mHistory_pop_over"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="取消/退出"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

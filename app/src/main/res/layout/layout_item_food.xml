@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:id="@+id/mLookImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_test" />
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mLookClassName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:text="意式咖啡式咖啡式咖啡式咖啡"
+                android:textSize="18sp" />
+
+            <!-- 大份 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/mLookSaleMax"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textColor="#caa11d"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:text="(大份)"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:theme="@style/My_CheckBox"
+                    android:id="@+id/mCheckMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="end|center" />
+
+            </LinearLayout>
+
+            <!-- 小份 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/mLookSaleMin"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:text="399.89"
+                    android:textColor="#caa11d"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:text="(小份)"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:theme="@style/My_CheckBox"
+                    android:id="@+id/mCheckMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="end|center" />
+
+            </LinearLayout>
+
+            <!-- 个数选择 -->
+            <json.makvenis.com.mylibrary.json.view.SimpleDelPlusView
+                android:id="@+id/mSimpleDelPlusView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </json.makvenis.com.mylibrary.json.view.SimpleDelPlusView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
